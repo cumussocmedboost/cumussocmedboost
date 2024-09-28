@@ -1,0 +1,224 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Cumus Socmed Boost</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1b1f3b;
+            color: white;
+            transition: all 0.3s ease-in-out;
+        }
+        header {
+            background-color: #0b0e3c;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            animation: slide-in 1s ease-out;
+        }
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+        }
+        nav a:hover {
+            color: #1db954;
+        }
+        section {
+            padding: 40px;
+            text-align: center;
+        }
+        .about ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .about ul li {
+            margin: 10px 0;
+            font-size: 1.1em;
+        }
+        .services {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .tab-buttons {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .tab-buttons button {
+            background-color: #0b0e3c;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 1.1em;
+            transition: background-color 0.3s;
+        }
+        .tab-buttons button:hover {
+            background-color: #1db954;
+        }
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table th, table td {
+            padding: 15px;
+            border: 1px solid white;
+            text-align: left;
+        }
+        table th {
+            background-color: #11154f;
+        }
+        .order p, .order a {
+            font-size: 1.2em;
+        }
+        .order a {
+            color: #1db954;
+        }
+        footer {
+            background-color: #0b0e3c;
+            padding: 10px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        @keyframes slide-in {
+            from { opacity: 0; transform: translateY(-30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cumus Socmed Boost</h1>
+    </header>
+    <nav>
+        <a href="#about">About Us</a>
+        <a href="#services">Services</a>
+        <a href="#order">Order Now</a>
+    </nav>
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>We help boost your social media presence and visibility. We offer boosting services that can increase followers, likes, views, and more, with monetization options to maximize your reach and engagement.</p>
+        <ul>
+            <li>Flexible payment options: GCash, PayPal, Binance</li>
+            <li>Comprehensive service packages</li>
+            <li>Trusted by over 100 clients on Facebook</li>
+            <li>30+ legit checks, 10+ page reviews, hundreds of boosting proofs</li>
+            <li>Fast, reliable, and responsive customer support</li>
+        </ul>
+    </section>
+    <section id="services" class="services">
+        <h2>Services</h2>
+        <div class="tab-buttons">
+            <button onclick="openTab('facebook')">Facebook</button>
+            <button onclick="openTab('instagram')">Instagram</button>
+            <button onclick="openTab('tiktok')">TikTok</button>
+        </div>
+        <div id="facebook" class="tab-content">
+            <h3>Facebook Services</h3>
+            <table>
+                <tr>
+                    <th>Service Name</th>
+                    <th>Price (per 1000)</th>
+                    <th>Min Order</th>
+                    <th>Max Order</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>Profile Followers</td>
+                    <td>150 PHP</td>
+                    <td>100</td>
+                    <td>1,000,000</td>
+                    <td>Fast delivery, 30-day refill, low to no drop</td>
+                </tr>
+                <tr>
+                    <td>Page Likes + Followers (Server 1)</td>
+                    <td>400 PHP</td>
+                    <td>100</td>
+                    <td>100,000</td>
+                    <td>High quality, fast delivery</td>
+                </tr>
+            </table>
+        </div>
+        <div id="instagram" class="tab-content">
+            <h3>Instagram Services</h3>
+            <table>
+                <tr>
+                    <th>Service Name</th>
+                    <th>Price (per 1000)</th>
+                    <th>Min Order</th>
+                    <th>Max Order</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>Followers</td>
+                    <td>200 PHP</td>
+                    <td>10</td>
+                    <td>1,000,000</td>
+                    <td>Instant start, fast delivery, refillable</td>
+                </tr>
+            </table>
+        </div>
+        <div id="tiktok" class="tab-content">
+            <h3>TikTok Services</h3>
+            <table>
+                <tr>
+                    <th>Service Name</th>
+                    <th>Price (per 1000)</th>
+                    <th>Min Order</th>
+                    <th>Max Order</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>Followers (Server 1)</td>
+                    <td>199 PHP</td>
+                    <td>10</td>
+                    <td>100,000</td>
+                    <td>Real organic, slow but stable growth</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <section id="order" class="order">
+        <h2>Order Now</h2>
+        <p>Contact or message us on Facebook to start our partnership:</p>
+        <a href="https://www.facebook.com/cumussmm">Facebook Cumus SMM</a>
+        <p>or fill out this <a href="#" style="color: #1db954;">lead form</a> for your quote.</p>
+    </section>
+    <footer>
+        <p>Contact us at kyumuscumus@gmail.com | <a href="https://www.facebook.com/cumussmm" style="color: white;">Facebook Cumus SMM</a></p>
+    </footer>
+    <script>
+        function openTab(tabName) {
+            var i, tabcontent;
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            document.getElementById(tabName).style.display = "block";
+        }
+        document.getElementById("facebook").style.display = "block";  // Default open
+    </script>
+</body>
+</html>
